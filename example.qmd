@@ -1,0 +1,22 @@
+---
+title: "DocxReheader Example"
+abstract: "This demonstrates DocxReheader"
+author:
+  name: Michael Milton
+  phone: 0491 570 006
+format:
+  docx:
+    filters:
+      - docx-reheader  
+---
+
+::: {custom-style="Title"}
+{{< meta title >}}
+:::
+::: {custom-style="Author"}
+{{< meta author.name >}}
+{{< meta author.phone >}}
+
+:::
+
+This is the body text

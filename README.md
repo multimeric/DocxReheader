@@ -21,9 +21,16 @@ format:
       - docx-reheader
 ```
 
-Finally, you will need to add your header page manually.
-To correctly style the header, I recommend using the following styles in your Quarto document. 
-[As described here](https://pandoc.org/MANUAL.html#output), Quarto allows you to use the `custom-style` attribute to do this:
+Finally, you will need to add your header page manually using the appropriate styles.
+For example, to add the document title with the Title style, you would do the following:
+```
+::: {custom-style="Title"}
+{{< meta title >}}
+:::
+```
+
+[As described here](https://pandoc.org/MANUAL.html#output), Quarto allows you to use the `custom-style` attribute to do this.
+To correctly style the header in the same way to the default header, I recommend using the following styles in your Quarto document:
 
 * `Title`
 * `Abstract`

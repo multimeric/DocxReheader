@@ -51,7 +51,8 @@ When rendered to docx, this looks like:
 Note that the title, author name and abstract are present, but not the phone number.
 What if we wanted no abstract but to include the phone number?
 
-In this case, we can follow the steps [outlined above](#instructions), to produce the final result: <example.qmd>.
+In this case, we can follow the steps [outlined above](#instructions), to produce the final result: [example.qmd](example.qmd).
+**Note**: not all metadata variables can currently be accessed due to https://github.com/quarto-dev/quarto-cli/issues/6769.
 
 ## Further reading
 For more information about .docx conversion in Quarto, [refer to this helpful post](https://github.com/quarto-dev/quarto-cli/discussions/4511).
